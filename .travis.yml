@@ -68,7 +68,7 @@ install:
 script:
     - coverage debug sys
     - py.test --version
-    - py.test --cov=splash --doctest-modules --duration=50 splash
+    - py.test --doctest-modules --duration=50 splash
 
 after_success:
     - codecov
